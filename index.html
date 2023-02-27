@@ -18,7 +18,7 @@
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navvolo">
+  <!-- <nav class="navbar navbar-expand-lg navvolo">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,7 +42,107 @@
         </form>
       </div>
     </div>
-  </nav>
+  </nav> -->
+
+  <section class="navbar bg-dark ">
+    <nav class="navbar ">
+        <div class="container-fluid">
+            <div class="animate__animated animate__zoomIn" id="lo1">
+            <img src="./imag/lo22.png " class=" ms-3 animate__animated animate__zoomIn" alt=""></div>
+            <div class="icon">
+                <div class="icon-item">
+        
+
+                </div>
+
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span id="btn" ><i class="fa-solid fa-bars-staggered"></i></span>
+        </button>
+
+            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+            <div class="offcanvas-body text-center fs-5 " id="e33">
+                    <ul class="navbar-nav  d-flex align-items-center justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="#">الرئيسية</a>
+                        </li>
+                        <hr>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                عن المحكمة
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">نبذة تاريخية</a></li>
+                                <li><a class="dropdown-item" href="#">التشريعات المنظمة</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">الهيكل المتكامل</a></li>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                خدمات
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">الاستعلام عن الطعون</a></li>
+                                <li><a class="dropdown-item" href="#">مكتبة المحكمةالعليا</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">مطبعة المحكمة العليا</a></li>
+                            </ul>
+                        </li>
+                        <hr>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                الاصدرات
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">مجلة المحكمه</a></li>
+                                <li><a class="dropdown-item" href="#">مجموعة احكام المحكمة</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <hr>
+                                <li><a class="dropdown-item" href="#">الابحاث و الدراسات</a></li>
+                                <li><a class="dropdown-item" href="#">طعون مختارة</a></li>
+                            </ul>
+                        </li><hr>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">المدونه</a>
+                        </li><hr>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">عن الموقع</a>
+                        </li><hr>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">اتصل بنا</a>
+                        </li><hr>
+                    </ul>
+                    <div class="logo-bar"> <img  id="i12" src="imag/logo.svg" alt=""> </div>
+
+                
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</section>
+
 
 
   <div id="carouselExampleIndicators" class="carousel slide position-relative" data-bs-ride="carousel">
@@ -66,7 +166,11 @@
         <img src="./img/2.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-    
+    <button class="carousel-control-prev" onClick="topFunction()" id="myBtn" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
    
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -222,6 +326,7 @@
     <script src="./js/my-js.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/data.json"></script>
+    <script src="./js/myjs.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Initialize Swiper -->

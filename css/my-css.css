@@ -2,7 +2,7 @@ body{
   font-family: 'Droid Arabic Kufi';
   direction: rtl;
   height: 4000px;
- 
+  scroll-behavior: smooth;
 }
 
 *{
@@ -17,58 +17,39 @@ body{
 }
 
 
-.main-btn{
-  background-color:var(--red--color);
-color: #fdfdfd;;
-padding:0.5rem 1rem;
- transition: 100ms;
- border: 0;
-color: var(--yaeelo--);
 
-}
-
-.my-btn{
-  text-decoration: none;
-  background-color: var(--red--color);
-  padding:15px 10px;
-  color:var(--yaeelo--)
-}
-
-/* strat navbar */
 nav{
-  background-color:var(--dark--color);
-  color:aliceblue;
+  height: 12vh;
+  width: 100%;
+  position: relative;
 }
-.navbar .navbar-nav .nav-link{
-  color:white;
+nav .container-fluid #lo1{
+width:60% ;
 }
-.navbar .navbar-nav .nav-link.active,
-.navbar .navbar-nav .nav-link:focus,
-.navbar .navbar-nav .nav-link:hover
-{
-  color:var(--green--color);
+
+  .navbar-toggler{
+    font-size: 30px;
+    border: 0px !important;
+    }
+    
+    #btn{
+        font-size:50px;
+        color: #fff !important;
+       
+    }
+    #btn:hover{
+      border: 0px;
+
+    }
+    #e33{
+      margin-top: 60px;
+    }
+nav img{
+width: 20%;}
+
+.offcanvas-end{
+  z-index: 2000;
 }
-.navbar .search{
-  border-left: 1px solid var(--green--color);
-}
-.navbar .search svg {
-  color: var(--green--color);
-}
-.navbar .navbar-toggler{
-  color:white;
-  font-size: 25px;
-  border-color: white;
-}
-.navbar .navbar-toggler[aria-expanded="true"]{
-  border-color: var(--green--color);
-}
-.navbar .navbar-toggler:focus{
-  box-shadow: none;
-}
-.navvolov{
-  background-color:var(--dark--color)
-}
-/* end navbar */
 
 nav{
   direction: ltr;
@@ -83,7 +64,22 @@ nav{
   color: white;
   max-width: 80%;
 }
-
+.bsm button{
+  margin-right: 20px;
+  background-color: transparent;
+  padding:10px 20px;
+  border: 1px solid white;
+  color: white;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+.bsm button:hover{
+  background-color: white;
+  color: rgb(41, 5, 5);
+  transition: 0.5s;
+  margin-right: 20px;
+  border-radius: 4px;
+}
 .carousel-inner >div>img{
 width: 100%;
 height: 100vh;
@@ -95,6 +91,17 @@ height: 100vh;
 }
 
 
+.carousel-control-prev-icon{  transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #b6b6b66e;
+  padding: 29px;
+  position: absolute;
+  bottom: 40px;
+
+}
 
 .hp-slider-wrapper .arrow-down {
   position: relative;
@@ -189,7 +196,7 @@ height: 100vh;
 /* start posts section */
 
 .posts{
-  margin-top:100px;
+ 
   background: transparent
    url('../img/news-01.png')
      no-repeat  ;
